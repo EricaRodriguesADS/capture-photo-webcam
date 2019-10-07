@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Capturar a foto da webcam e fazer download</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 style="text-align: center;">Sorria, seu sorriso é lindo :)</h2>
+    <div class="area">
+      <div class="row">
+        <div class="col-md-6">
+            <video autoplay="true" id="webCamera">
+              </video>
+              <button type="button" onclick="takeSnapShot()">Capturar foto</button>
+        </div>
+        <div class="col-md-6">
+            <img id="photo"/>
+            <button type="button" id="btnDownload" onclick="download()">Download</button>
+        </div>
+      </div>
+      <script src="webcam.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
